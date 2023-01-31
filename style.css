@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book");
 
 input {
   caret-color: red;
@@ -15,13 +15,13 @@ body {
   justify-content: center;
   place-items: center;
   overflow: hidden;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "ITC Avant Garde Gothic Std Bold", sans-serif;
 }
 
 .container {
   position: relative;
   width: 350px;
-  height: 500px;
+  height: 450px;
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;
@@ -32,8 +32,7 @@ body {
 .brand-logo {
   height: 100px;
   width: 100px;
-  background-image: url("https://github.com/carlosAthena/loginAthenaHoldings/blob/main/Athena.png");
-  object-fit: cover;
+  background-image: url("/Athena.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
