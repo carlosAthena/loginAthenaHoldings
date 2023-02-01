@@ -9,7 +9,7 @@
 .body {
   margin: 0;
   width: 100vw;
-  height: 80%;
+  height: 100%;
   background: #ecf0f3;
   display: flex;
   align-items: center;
@@ -138,9 +138,9 @@ body {
 /* Style the header */
 header {
   background-color: #33354a;
-  padding: 30px;
+  padding: 5px;
   text-align: center;
-  font-size: 35px;
+  font-size: 20px;
   color: white;
 }
 
@@ -389,10 +389,10 @@ body {
     width: 33%;
   }
   .footer .col h1 {
-    font-size: 14px;
+    font-size: 12px;
   }
   .footer .col ul li {
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -400,16 +400,16 @@ body {
     width: 50%;
   }
   .footer .col h1 {
-    font-size: 14px;
+    font-size: 12px;
   }
   .footer .col ul li {
-    font-size: 13px;
+    font-size: 10px;
   }
   p.paragraph {
     margin: auto;
     text-align: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 10px;
     display: inline;
   }
 }
@@ -421,7 +421,7 @@ body {
     margin: auto;
     text-align: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 10px;
     display: inline;
   }
 }
