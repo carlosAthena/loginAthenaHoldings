@@ -32,13 +32,27 @@
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
 
-.brand-logo {
+/* .brand-logo {
   height: 100px;
   width: 100px;
-  background-image: url("/images/Athena.png");
+  background-image: url("/images/Athena.png"); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+} */
+
+.imgAthena {
+  height: 100px;
+  width: 100px;
+  /* background-image: url("/images/Athena.png"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
   margin: auto;
   border-radius: 50%;
   box-sizing: border-box;
