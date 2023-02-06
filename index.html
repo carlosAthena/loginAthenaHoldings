@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://www.dafontfree.net/embed/ZnV0dXJhLW1lZGl1bSZkYXRhLzQ2L2YvNjEyNDcvZnV0dXJhIG1lZGl1bSBidC50dGY" rel="stylesheet" type="text/css"/>
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/ZYfDb1x/Logo-de-Athena-sin-texto.png" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   </head>
   <body>
      <header>
@@ -24,11 +29,17 @@
             <img src="https://i.pinimg.com/564x/95/f8/33/95f83339f157ba58ebadcc7ff238ac4a.jpg" alt="Athena.png" class="imgAthena">
           <!-- </div> -->
           <div class="brand-title">ATHENA HOLDINGS</div>
-          <div class="inputs">
-            <label>Ingrese su Celular</label>
-            <!-- <input id="phone" type="tel" name="phone" /> -->
+          <!-- Código de paises  -->
+          <div class="container">
+            <form id="login" onsubmit="process(event)">
+              <p>Ingrese su número de móvil</p>
+              <input id="phone" type="tel" name="phone" />
+              <!-- <input type="submit" class="btn" value="Verify" />
+            </form>
             <div class="alert alert-info" style="display: none;"></div>
-            <input class="number" type="number" placeholder="Número de Teléfono" />
+           </div> -->
+           <!-- Código de paises  -->
+           
             <button type="submit">INICIAR REGISTRO         
             </button>
         </div>
@@ -99,5 +110,41 @@
         </div>
       </div>
     </footer>
+   
   </body>
+  <script>
+
+function getIp(callback) {
+ fetch('https://ipinfo.io/170.0.179.234?token=d40b9a9c08b7ec>', { headers: { 'Accept': 'application/json' }})
+   .then((resp) => resp.json())
+   .catch(() => {
+     return {
+       country: 'us',
+     };
+   })
+   .then((resp) => callback(resp.country));
+}
+
+
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      initialCountry: "auto",
+      preferredCountries: ["us", "sv", "co", "ve"],
+ geoIpLookup: getIp,
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+
+    const info = document.querySelector(".alert-info");
+
+function process(event) {
+ event.preventDefault();
+
+ const phoneNumber = phoneInput.getNumber();
+
+ info.style.display = "";
+ info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+}
+
+  </script>
 </html>
