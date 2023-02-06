@@ -1,5 +1,4 @@
 @import url("https://fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -23,7 +22,7 @@
 .form {
   position: relative;
   width: 350px;
-  height: 475px;
+  height: 500px;
   border-radius: 20px;
   padding: 40px;
   margin: 70px;
@@ -60,7 +59,8 @@
 }
 
 .brand-title {
-  margin-top: 28px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 1.8rem;
   color: #eda513;
@@ -71,6 +71,17 @@
   margin-top: 30px;
 }
 
+.inputs {
+  margin-top: 10px;
+}
+
+.message {
+  font-family: "futura-medium", sans-serif;
+  color: #8f9194;
+  font-size: 12px;
+  padding-top: 30px;
+}
+
 label,
 input,
 button {
@@ -79,7 +90,9 @@ button {
   padding: 0;
   border: none;
   outline: none;
+  font-family: "futura-medium", sans-serif;
   box-sizing: border-box;
+  color: #8f9194;
 }
 
 label {
@@ -101,7 +114,11 @@ input {
   height: 50px;
   font-size: 14px;
   border-radius: 50px;
-  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  box-shadow: inset 2px 2px 2px #cbced1, inset -2px -2px 2px white;
+}
+
+.input {
+  margin-top: 10px;
 }
 
 button {
@@ -112,12 +129,13 @@ button {
   border-radius: 20px;
   cursor: pointer;
   font-weight: 900;
-  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  /* box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white; */
   transition: 0.5s;
 }
 
 button:hover {
   box-shadow: none;
+  background: #f7b530;
 }
 box-shadow: none;
 
@@ -213,7 +231,7 @@ p.paragraph {
 
 body {
   line-height: 1.5;
-  font-family: "Poppins", sans-serif;
+  font-family: "futura-medium", sans-serif;
 }
 * {
   margin: 0;
