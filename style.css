@@ -210,14 +210,9 @@ footer {
   padding: 50px;
   text-align: center;
   color: white;
-  z-index: 5;
 }
 
 /* Index input */
-
-/* .phone {
-  z-index: 200;
-} */
 
 p.paragraph {
   margin: auto;
